@@ -29,3 +29,7 @@ img {
 .hidden {
   display: none;
 }
+
+form div + div {
+  margin-top: 24px;
+}
