@@ -8,28 +8,37 @@ img {
   height: auto;
 }
 
-#preview {
+.hidden {
+  display: none;
+}
+
+.screenshot {
   position: relative;
   width: 320px;
   height: 568px;
   margin: 0 auto;
   background: gray;
 }
-#preview svg,
-#preview img {
+.screenshot__arc,
+.screenshot__img {
   position: absolute;
   left: 0;
   top: 0;
 }
-#preview svg {
+.screenshot__arc {
   z-index: 1;
   top: 43px;
 }
 
-.hidden {
-  display: none;
+.c-form {}
+
+.c-field {
+
+}
+.c-field + .c-field {
+  margin-top: 16px;
 }
 
-form div + div {
-  margin-top: 16px;
+.c-field__title {
+  display: block;
 }

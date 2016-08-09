@@ -57,7 +57,8 @@
       var img = document.createElement("img");
       img.classList.add("obj");
       img.file = file;
-      screenshotPreview.appendChild(img); // Assuming that "preview" is the div output where the content will be displayed.
+      img.classList.add('screenshot__img')
+      screenshotPreview.appendChild(img);
 
       var reader = new FileReader();
       reader.onload = (function(aImg) {
